@@ -1,0 +1,343 @@
+{
+  "type": "figjam",
+  "version": "1.0",
+  "created": "2025-10-21T18:17:25.610400",
+  "nodes": [
+    {
+      "id": "f1ae5456-1e58-4abf-828e-1229dd64ccc2",
+      "type": "sticky",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "**Deaf Signer**"
+    },
+    {
+      "id": "8b3c81e0-d60d-420d-ade1-5668cd7e7dd5",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 100
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Sign \u2192 Text"
+    },
+    {
+      "id": "a730fbe8-b76b-4022-8f9d-b4cbbebfa532",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 280
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Text/Speech \u2192 Sign"
+    },
+    {
+      "id": "2a3072e4-8a94-40ae-ab65-e9276ab3e59f",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 460
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Offline Mode"
+    },
+    {
+      "id": "371dbc43-36b3-40d1-ac23-72c7241eb865",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 640
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Regional Sign Support"
+    },
+    {
+      "id": "9608e477-6af9-4485-a2f4-d807f38473fc",
+      "type": "sticky",
+      "position": {
+        "x": 100,
+        "y": 920
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "**Deaf Non-Signer**"
+    },
+    {
+      "id": "7ff17fe3-e378-4570-8f3d-e6a37103b3f4",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 920
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Icon/Tap \u2192 Output"
+    },
+    {
+      "id": "fd96c3f6-16cc-4e36-a58d-4ce0ac730929",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 1100
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Learn Sign Basics"
+    },
+    {
+      "id": "9e888a27-7cb3-4791-afa8-d2f1345074d9",
+      "type": "sticky",
+      "position": {
+        "x": 100,
+        "y": 1380
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "**Coda**"
+    },
+    {
+      "id": "55cd00ea-f331-4a0f-a022-552d6e481b1e",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 1380
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Translate for Family"
+    },
+    {
+      "id": "a8010c6d-1d48-40f6-839a-1926474f3697",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 1560
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Feedback on Signs"
+    },
+    {
+      "id": "f3d2139c-9fef-4e41-a5b3-b83f2144b9bb",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 1740
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Onboard Others"
+    },
+    {
+      "id": "7aef441d-3018-4f7f-9346-ecdd336ec3e0",
+      "type": "sticky",
+      "position": {
+        "x": 100,
+        "y": 2020
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "**Non-Signing Valid**"
+    },
+    {
+      "id": "c8262c8d-d1ee-4b2d-83e9-943f061ce23a",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 2020
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Speak/Type \u2192 Sign"
+    },
+    {
+      "id": "87652142-af3a-4ec2-8ddd-374b0df74319",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 2200
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Sign \u2192 Text/Speech"
+    },
+    {
+      "id": "3c16ad42-20c0-4bb3-b5d1-ccf0822a6543",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 2380
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Deaf Etiquette Help"
+    },
+    {
+      "id": "eafa00c9-52ec-425f-b476-4b1b05c6b9d6",
+      "type": "sticky",
+      "position": {
+        "x": 100,
+        "y": 2660
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "**Org**"
+    },
+    {
+      "id": "698a2907-05ea-442d-8e2d-b451cb759002",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 2660
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Check-in with Deaf Guest"
+    },
+    {
+      "id": "0d617cd5-0bba-4efe-9034-f2685ed66576",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 2840
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Deaf-Friendly Tour"
+    },
+    {
+      "id": "fbca45d2-545b-4f62-b414-f99aa4a027ee",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 3020
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Public Service Phrasebook"
+    },
+    {
+      "id": "52ccd913-8396-4960-b425-0585506427c6",
+      "type": "sticky",
+      "position": {
+        "x": 400,
+        "y": 3200
+      },
+      "size": {
+        "width": 240,
+        "height": 140
+      },
+      "style": {
+        "fill": "#fdd835"
+      },
+      "content": "Analytics on Usage"
+    }
+  ]
+}

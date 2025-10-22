@@ -1,0 +1,334 @@
+{
+  "document": {
+    "id": "c2a2bb5d-525f-4066-a576-698aaf02ad04",
+    "name": "DeafSignerAppUserRoles",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "ddb54208-81a0-4612-97b2-91247ec9b58f",
+        "name": "User Stories Map",
+        "type": "CANVAS",
+        "children": [
+          {
+            "id": "8a349420-c0b1-47e0-ab1d-d1e13405d11d",
+            "type": "STICKY",
+            "name": "**Deaf Signer**",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 0,
+              "y": 0,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "**Deaf Signer**"
+          },
+          {
+            "id": "92f7f70f-50de-4d16-893d-432d0aff217e",
+            "type": "STICKY",
+            "name": "Sign \u2192 Text",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 0,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Sign \u2192 Text"
+          },
+          {
+            "id": "dbf978d9-4ea7-4cc2-bc24-48663d0f6a92",
+            "type": "STICKY",
+            "name": "Text/Speech \u2192 Sign",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 200,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Text/Speech \u2192 Sign"
+          },
+          {
+            "id": "4b35a50d-9dac-462e-8081-2227c2cd2a48",
+            "type": "STICKY",
+            "name": "Offline Mode",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 400,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Offline Mode"
+          },
+          {
+            "id": "483cf842-525f-4d30-80dc-b9cdafd499da",
+            "type": "STICKY",
+            "name": "Regional Sign Suppor",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 600,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Regional Sign Support"
+          },
+          {
+            "id": "109712f6-e93a-44d9-b4e4-c131cf77e0eb",
+            "type": "STICKY",
+            "name": "**Deaf Non-Signer**",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 0,
+              "y": 1100,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "**Deaf Non-Signer**"
+          },
+          {
+            "id": "058ded10-0c36-4122-b714-2536bce117d8",
+            "type": "STICKY",
+            "name": "Icon/Tap \u2192 Output",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 1100,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Icon/Tap \u2192 Output"
+          },
+          {
+            "id": "132b0922-1e52-4e2a-acfc-3cd24454056a",
+            "type": "STICKY",
+            "name": "Learn Sign Basics",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 1300,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Learn Sign Basics"
+          },
+          {
+            "id": "d720c60e-ad10-4c21-b876-54f3cf65cebe",
+            "type": "STICKY",
+            "name": "**Coda**",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 0,
+              "y": 1800,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "**Coda**"
+          },
+          {
+            "id": "97b9e2e1-5c3c-4c87-90fc-ab9a9acf8cab",
+            "type": "STICKY",
+            "name": "Translate for Family",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 1800,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Translate for Family"
+          },
+          {
+            "id": "104d7462-cfa1-4375-940a-e613d10e4931",
+            "type": "STICKY",
+            "name": "Feedback on Signs",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 2000,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Feedback on Signs"
+          },
+          {
+            "id": "c69ebf18-91f7-4170-94a2-e2c7330c9268",
+            "type": "STICKY",
+            "name": "Onboard Others",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 2200,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Onboard Others"
+          },
+          {
+            "id": "63f96687-c6cc-49c9-b534-fb3526c9a744",
+            "type": "STICKY",
+            "name": "**Non-Signing Valid*",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 0,
+              "y": 2700,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "**Non-Signing Valid**"
+          },
+          {
+            "id": "e954fc60-53dc-40c5-a509-d1bcb0cf48fe",
+            "type": "STICKY",
+            "name": "Speak/Type \u2192 Sign",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 2700,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Speak/Type \u2192 Sign"
+          },
+          {
+            "id": "4cc4c26d-4d9d-4a26-9642-77dcaf57824f",
+            "type": "STICKY",
+            "name": "Sign \u2192 Text/Speech",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 2900,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Sign \u2192 Text/Speech"
+          },
+          {
+            "id": "35cbbc8b-d98e-44d1-a7de-416d6b920c38",
+            "type": "STICKY",
+            "name": "Deaf Etiquette Help",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 3100,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Deaf Etiquette Help"
+          },
+          {
+            "id": "2a3c6227-3cd3-4ce3-8408-120a02e54af9",
+            "type": "STICKY",
+            "name": "**Org**",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 0,
+              "y": 3600,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "**Org**"
+          },
+          {
+            "id": "4ee76a69-7e4a-468b-852f-ca791f5b3281",
+            "type": "STICKY",
+            "name": "Check-in with Deaf G",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 3600,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Check-in with Deaf Guest"
+          },
+          {
+            "id": "52024242-3fd4-4764-82e8-c032fab6cef3",
+            "type": "STICKY",
+            "name": "Deaf-Friendly Tour",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 3800,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Deaf-Friendly Tour"
+          },
+          {
+            "id": "ca6f2284-aded-4157-9bed-9842dcdeb7de",
+            "type": "STICKY",
+            "name": "Public Service Phras",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 4000,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Public Service Phrasebook"
+          },
+          {
+            "id": "df5c0377-31a5-46f2-acf3-d7d68448f26c",
+            "type": "STICKY",
+            "name": "Analytics on Usage",
+            "style": {
+              "fill": "YELLOW"
+            },
+            "absoluteBoundingBox": {
+              "x": 400,
+              "y": 4200,
+              "width": 240,
+              "height": 140
+            },
+            "characters": "Analytics on Usage"
+          }
+        ]
+      }
+    ]
+  },
+  "components": {},
+  "schemaVersion": 0,
+  "styles": {}
+}

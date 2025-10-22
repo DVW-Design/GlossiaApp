@@ -1,0 +1,63 @@
+{
+  "name": "glossia-app",
+  "version": "0.1.0",
+  "description": "Bidirectional sign language translation application",
+  "private": true,
+  "workspaces": [
+    "mobile",
+    "server",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:mobile\" \"npm run dev:server\"",
+    "dev:mobile": "cd mobile && npm start",
+    "dev:server": "cd server && npm run dev",
+    "build": "npm run build:mobile && npm run build:server",
+    "build:mobile": "cd mobile && npm run build",
+    "build:server": "cd server && npm run build",
+    "test": "npm run test:mobile && npm run test:server",
+    "test:mobile": "cd mobile && npm test",
+    "test:server": "cd server && npm test",
+    "lint": "npm run lint:mobile && npm run lint:server",
+    "lint:mobile": "cd mobile && npm run lint",
+    "lint:server": "cd server && npm run lint",
+    "storybook": "cd mobile && npm run storybook",
+    "storybook:build": "cd mobile && npm run storybook:build",
+    "docs:organize": "node scripts/organize-docs.mjs",
+    "docs:organize:dry": "node scripts/organize-docs.mjs --dry-run",
+    "security:scan": "npm audit --workspaces",
+    "security:fix": "npm audit fix --workspaces",
+    "security:report": "node scripts/security/audit.mjs",
+    "security:auto-update": "node scripts/security/auto-update.mjs",
+    "clean": "rm -rf node_modules mobile/node_modules server/node_modules shared/node_modules",
+    "clean:build": "rm -rf mobile/dist server/dist",
+    "postinstall": "cd mobile && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DVWDesign/GlossiaApp"
+  },
+  "keywords": [
+    "sign-language",
+    "translation",
+    "accessibility",
+    "ai",
+    "ml",
+    "react-native",
+    "expo",
+    "lsf",
+    "asl",
+    "bsl"
+  ],
+  "author": "DVWDesign",
+  "license": "UNLICENSED"
+}

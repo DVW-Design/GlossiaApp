@@ -1,0 +1,18 @@
+Role,User Story,Priority,Acceptance Criteria
+Deaf Signer,"As a Deaf Signer, I want to sign into my phone camera and get a text transcription, so that hearing people can understand me in real-time.",High,The app recognizes my sign input and displays accurate text within 2 seconds.
+Deaf Signer,"As a Deaf Signer, I want to see responses from hearing people translated into sign language (avatar or video), so that I can understand them.",High,The app converts speech/text to sign avatar or custom sign video.
+Deaf Signer,"As a Deaf Signer, I want to pre-record or store frequently signed messages, so I can use them quickly in common situations.",Medium,"Users can save, label, and trigger messages via quick access."
+Deaf Signer,"As a Deaf Signer, I want the app to function offline for simple translation, so that I can use it anywhere.",Medium,Core translation models work offline without connection.
+Deaf Signer,"As a Deaf Signer, I want the app to support regional sign languages (LSF, ASL, BSL, etc.), so that I can use my native sign.",High,User chooses their sign language preference in onboarding/settings.
+Deaf Non-Signer,"As a Deaf Non-Signer, I want to write or tap icons to communicate, so that I can express myself without knowing signs.",High,The app offers icon-based or text input with fast output.
+Deaf Non-Signer,"As a Deaf Non-Signer, I want to learn some common signs via tutorial, so I can start signing for common tasks.",Medium,A learn-mode exists with animated sign lessons for beginners.
+Coda,"As a Coda, I want to use the app to help translate sign to speech/text and vice versa, so I can help my Deaf family in interactions.",High,Codas can act as intermediaries via a dual-mode interface.
+Coda,"As a Coda, I want to give feedback on sign accuracy, so I can improve the app's recognition system.",Medium,App allows Codas to rate/sign correct suggestions.
+Coda,"As a Coda, I want to act as a 'community guide' to help new users, so that I can support onboarding of new Deaf/Valid users.",Low,Codas can apply to be a helper/moderator.
+Non-Signing Valid,"As a hearing person, I want to speak or type and have my message translated into sign, so that I can communicate with a Deaf person.",High,Speech-to-sign avatar or animated sign output is accurate and quick.
+Non-Signing Valid,"As a hearing person, I want to understand what a Deaf person is signing in real time, so that I can respond.",High,The app shows a text or speech translation of signs within 2s delay.
+Non-Signing Valid,"As a user, I want clear instructions on how to interact with the Deaf community, so I don’t make social mistakes.",Medium,An etiquette guide is available on first use or as a help section.
+Org,"As a hotel receptionist, I want to interact with a Deaf guest using the app, so that I can give check-in instructions.",High,"App provides simple mode for common interactions (check-in, ID check, etc.)."
+Org,"As a museum, I want to offer Deaf-friendly guided tours using sign-based translation, so all visitors feel included.",Medium,App has a pre-programmed tour mode with signed or subtitled content.
+Org,"As a public service admin, I want my staff to understand basic sign requests, so we can better serve Deaf citizens.",High,Admin mode includes frequently signed phrases and service-specific modules.
+Org,"As a business owner, I want analytics about how Deaf users interact with my service, so I can improve accessibility.",Low,Org dashboard provides anonymized usage stats.

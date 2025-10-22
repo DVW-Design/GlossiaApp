@@ -1,0 +1,56 @@
+name: "Chromatic - Mobile"
+
+# Only run on push to main branch or pull requests to avoid excessive builds
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'mobile/**'
+      - '.github/workflows/chromatic.yml'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  chromatic:
+    name: Run Chromatic
+    runs-on: ubuntu-latest
+
+    # Only run if mobile code or workflow changed
+    if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required for Chromatic
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'mobile/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: ./mobile
+        run: npm ci
+
+      - name: Build Storybook for Web
+        working-directory: ./mobile
+        run: |
+          # Export Expo Storybook as static web build
+          npx expo export:web --output-dir=storybook-static
+
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          # Use GitHub secret instead of hardcoded token
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          workingDir: ./mobile
+          storybookBuildDir: storybook-static
+          # Auto-accept changes on main branch
+          autoAcceptChanges: ${{ github.ref == 'refs/heads/main' }}
+          # Exit with error on UI changes in PRs
+          exitOnceUploaded: ${{ github.event_name == 'pull_request' }}
