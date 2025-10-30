@@ -22,6 +22,22 @@ Enable deaf and hard-of-hearing individuals to communicate seamlessly through re
 
 ## Recommended MCP Servers
 
+For optimal development experience, install these Model Context Protocol (MCP) servers:
+
+### Quick Setup
+
+Run the automated installation script:
+
+```bash
+npm run mcp:setup
+```
+
+This installs all required MCP servers for GlossiaApp. Verify installation:
+
+```bash
+npm run mcp:check
+```
+
 ### 1. Figma MCP Server (ESSENTIAL)
 
 ```bash
@@ -29,50 +45,72 @@ Enable deaf and hard-of-hearing individuals to communicate seamlessly through re
 claude mcp add --transport http figma-desktop http://127.0.0.1:3845/mcp
 ```
 
+**Official Documentation:**
+- https://www.figma.com/blog/introducing-figmas-dev-mode-mcp-server/
+- https://github.com/figma/mcp-server-guide/
+
 **Benefits:**
 - Design-to-code for mobile UI components
 - Avatar design extraction
 - UI/UX prototype conversion
-- Real-time design updates
+- Layout data for responsive mobile design
+- Real-time design updates and synchronization
+- **No API key required** - uses your Figma Desktop authentication!
 
-**Requirements:** Figma Desktop app must be running
+**Requirements:** Figma Desktop app must be running (hosts MCP server on port 3845)
 
 ---
 
-### 2. MongoDB MCP Server (RECOMMENDED)
+### 2. Atlassian MCP Server (PROJECT MANAGEMENT)
+
+```bash
+claude mcp add atlassian -- npx -y @atlassian/mcp-server
+```
+
+**Official Documentation:**
+- https://developer.atlassian.com/platform/mcp/
+
+**Benefits:**
+- Jira integration for user story tracking
+- Sprint planning and issue management
+- Confluence documentation access
+- Team coordination and collaboration
+- Automated workflow management
+
+**Requirements:** Atlassian API token configuration (see setup guide)
+
+---
+
+### 3. MongoDB MCP Server (DATABASE - Optional)
 
 ```bash
 claude mcp add mongodb -- npx -y @mongodb-js/mongodb-mcp-server
 ```
 
+**Official Documentation:**
+- https://www.mongodb.com/docs/mcp-server/
+
 **Benefits:**
-- User profile management
-- Translation history storage
+- User profile management queries
+- Translation history storage patterns
 - Learning progress tracking
 - Sign language dictionary management
+- Schema design best practices
 
----
-
-### 3. Jira MCP Server (PROJECT MANAGEMENT)
-
-**Status:** 🚧 To be configured
-
-**Purpose:**
-- User story tracking
-- Sprint planning
-- Issue management
-- Team coordination
-
-**Configuration:** See `docs/07-guides/MCP-SETUP-JIRA.md` (to be created)
+**Note:** Optional for GlossiaApp. Required if using MongoDB backend.
 
 ---
 
 ### 4. Additional MCPs to Evaluate
 
-- **Linear MCP** - Alternative to Jira
+**Future Considerations:**
+- **Linear MCP** - Alternative to Atlassian/Jira
 - **Notion MCP** - Documentation and knowledge base
 - **Slack/Discord MCP** - Team communication
-- **AWS MCP** - Cloud infrastructure management (for ML models)
+- **AWS MCP** - Cloud infrastructure (for ML models)
+- **Firebase MCP** - Real-time database and authentication
+
+**See full setup guide:** `docs/07-guides/MCP-SETUP-GUIDE.md` (to be created)
 
 ---
 
@@ -209,8 +247,44 @@ npm run build            # Build all packages
 npm test                 # Run all tests
 npm run lint             # Lint all code
 npm run storybook        # Start Storybook UI development
-npm run security:scan    # Security audit
 npm run clean            # Remove all node_modules
+```
+
+### MCP Servers
+```bash
+npm run mcp:setup        # Install all MCP servers (Figma + Atlassian)
+npm run mcp:check        # Verify MCP installation
+npm run mcp:install      # Same as mcp:setup
+```
+
+### Documentation
+```bash
+npm run docs:organize         # Move HTML/PDF to .output folder
+npm run docs:organize:dry     # Preview organization (dry-run)
+npm run docs:organize:cleanup # Also remove empty directories
+npm run docs:fix              # Fix documentation issues
+```
+
+### GitHub Operations
+```bash
+npm run github:issues         # List all issues (last 20)
+npm run github:issues:open    # List open issues
+npm run github:issues:closed  # List closed issues
+npm run github:pr:list        # List pull requests
+npm run github:pr:status      # Show PR status
+npm run github:repo:view      # View repository details
+npm run github:actions        # List GitHub Actions runs
+npm run github:security       # Check security vulnerabilities
+```
+
+### Security
+```bash
+npm run security:scan                # Multi-workspace security audit
+npm run security:fix                 # Auto-fix vulnerabilities
+npm run security:report              # Comprehensive security report
+npm run security:auto-update         # Safe auto-update (critical/high)
+npm run security:aikido              # AIKIDO security scan
+npm run security:aikido:interactive  # Interactive security dashboard
 ```
 
 ### Mobile App (from /mobile directory)
@@ -785,22 +859,36 @@ import { AccessibilityInfo } from 'react-native';
 
 ---
 
-### Rule 8: Use Project Frameworks
+### Rule 8: Use Project Frameworks Over Raw Commands
 
-**IMPORTANT:** Always use project-specific scripts and tools.
+**CRITICAL:** Always use the project's npm scripts instead of raw commands.
 
 ❌ **DON'T:**
 ```bash
-npm audit
-npm update
+npm audit                # Use security:scan instead
+npm audit fix            # Use security:fix instead
+npm update               # Use security:auto-update instead
+gh issue list            # Use github:issues instead
 ```
 
 ✅ **DO:**
 ```bash
-npm run security:scan
-npm run security:fix
-npm run docs:organize
+npm run security:scan              # Multi-workspace security audit
+npm run security:auto-update       # Safe auto-update (critical/high only)
+npm run security:aikido:interactive # Interactive security dashboard
+npm run docs:organize              # Organize documentation
+npm run github:issues              # List GitHub issues
+npm run mcp:setup                  # Install MCP servers
 ```
+
+**Why:** Project frameworks provide:
+- Multi-workspace scanning (mobile/server/shared)
+- Severity thresholds and safe updates
+- AIKIDO integration for enhanced security
+- Consistent behavior across all repositories
+- Proper error handling and reporting
+
+**See:** `docs/07-guides/INTERACTION-RULES.md` (to be created) for complete details
 
 ---
 
